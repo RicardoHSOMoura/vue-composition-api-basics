@@ -8,6 +8,24 @@
   </div>
 </template>
 
+<script setup>
+import { ref } from 'vue'
+
+const counter = ref(0)
+
+const increaseCounter = () => {
+  counter.value++
+}
+
+const decreaseCounter = () => {
+  counter.value--
+}
+</script>
+
+
+<!--
+
+COMPOSITION API without SCTIPT SETUP
 <script>
 import { ref } from 'vue'
 export default {
@@ -27,7 +45,8 @@ export default {
 }
 </script>
 
-<!--
+OPTIONS API
+
 <script>
 export default {
   data() {
